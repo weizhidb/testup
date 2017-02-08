@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf8" />
+		<title>
+			页面导航条
+		</title>
+		<style type="text/css">
+			* {
+				padding: 0;
+				margin: 0;
+				border: 0;
+				font-size: 100%;
+			}
+			
+			h1 {
+				text-align: center;
+				margin: 20px auto;
+				font-size: 1.5em;
+				color: red;
+				text-shadow: 0 0 1px blue;
+			}
+			
+			body {
+				background: #f0f8ff;
+			}
+			
+			.navigation {
+				height: 50px;
+				background: black;
+			}
+			
+			.navigation .nav {
+				height: 50px;
+				width: 960px;
+				margin: 0 auto;
+			}
+			
+			.navigation .nav li {
+				float: left;
+				width: 119px;
+				height: 50px;
+				text-align: center;
+				border-right: 1px solid white;
+				font-size: 1.2em;
+				line-height: 50px;
+			}
+			
+			.navigation .nav li:hover .product {
+				width: 600px;
+				height: 400px;
+			}
+			
+			.navigation .nav li:hover .product li {
+				float: left;
+				width: 200px;
+				height: 400px;
+				background: white;
+			}
+			
+			.navigation .nav li:hover .product li p span {
+				font-weight: bolder;
+			}
+			
+			.navigation .nav li ul {
+				display: none;
+				/*鼠标不悬浮该处时不显示元素*/
+			}
+			
+			.navigation .nav li:hover ul {
+				display: block;
+				background: #f8f7f5;
+			}
+			
+			.navigation .nav li:hover ul li {
+				font-size: 1em;
+				border-right: none;
+				background: #bbbbbb;
+			}
+			
+			.navigation .nav li:hover ul li a {
+				color: black;
+			}
+			
+			.navigation .nav li:hover ul li a:hover {
+				color: black;
+				background: #888888;
+			}
+			
+			.navigation .nav .last {
+				border-right: none;
+			}
+			
+			.navigation .nav li a {
+				display: block;
+				/*设置元素给块模式*/
+				text-decoration: none;
+				color: white;
+			}
+			
+			.navigation .nav li a:hover {
+				display: block;
+				width: 119px;
+				height: 50px;
+				background: #F00;
+			}
+		</style>
+	</head>
+
+	<body>
+		<h1>HTML导航条下拉面板</h1>
+		<div class="navigation">
+			<ul class="nav">
+				<li><a href="#">首页</a></li>
+				<li><a href="#">公司产品</a>
+					<ul class="product">
+						<li>
+							<p><span>指纹考勤机</span></p>
+							<p>中控-XU</p>
+							<p>中控-F12</p>
+							<p>中控-F1000</p>
+							<p>中控-M160</p>
+						</li>
+						<li>
+							<p><span>台式电脑</span></p>
+							<p>lenovo启天4390</p>
+							<p>lenovo扬天1991</p>
+							<p>戴尔X60</p>
+							<p>戴尔M232</p>
+							<p>苹果OX-8</p>
+							<p>AppleOX-110</p>
+						</li>
+						<li>
+							<p><span>手机</span></p>
+							<p>APPLE</p>
+							<p>SUMSUNG</p>
+							<p>LENOVO</p>
+							<p>VIVO</p>
+							<p>OPPO</p>
+							<p>HUAWEI</p>
+							<p>NOKIA</p>
+						</li>
+					</ul>
+				</li>
+				<li><a href="#">公司简介</a>
+					<ul>
+						<li><a href="#">公司介绍</a></li>
+						<li><a href="#">公司员工</a></li>
+						<li><a href="#">企业实力</a></li>
+						<li><a href="#">先进科技</a></li>
+					</ul>
+				</li>
+				<li><a href="#">公司文化</a></li>
+				<li><a href="#">大事记</a></li>
+				<li><a href="#">登录</a></li>
+				<li><a href="#">注册</a></li>
+				<li class="last"><a href="#">联系我们</a></li>
+			</ul>
+		</div>
+	</body>
+
+</html>
